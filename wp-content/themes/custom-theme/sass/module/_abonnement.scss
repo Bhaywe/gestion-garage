@@ -1,0 +1,21 @@
+.abonnement {
+
+     &__produit {
+          height: 17rem;
+          justify-content: space-between;
+          align-items: center;
+          width: 90%;
+          margin: 0 auto 10rem;
+          padding: 0 4rem;
+          border-radius: $b-radius;
+          border: 1px solid $color-secondary;
+
+          @include responsive(tablet) { 
+               width: 100%;
+               display: block;
+               padding: 3rem;
+               height: 22rem;
+               position: relative;
+          }
+     }
+}

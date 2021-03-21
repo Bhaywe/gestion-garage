@@ -1,0 +1,15 @@
+{
+    "name": "bianka/effix",
+    "authors": [
+        {
+            "name": "Bianka",
+            "email": "Biankahale@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "Effix\\": "classes"
+        }
+    }
+}

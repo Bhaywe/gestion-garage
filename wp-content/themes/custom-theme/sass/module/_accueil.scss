@@ -1,0 +1,14 @@
+.accueil {
+     height: 82rem;
+     align-items: center;
+
+     @include responsive(tablet) { 
+          height: 55vh;
+     }
+
+     a {
+          @include responsive(phone) { 
+               padding: 1.5rem 35%;
+          }
+     }
+}

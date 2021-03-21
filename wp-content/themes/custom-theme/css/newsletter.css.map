@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,WAAW,CAAC;EACP,MAAM,EAAE,KAAK;CAOjB;;AALK,AACI,iBADE,CACF,KAAK,CAAC;EACD,YAAY,EAAE,IAAI;CACtB",
+    "sources": [
+        "../sass/module/newsletter.scss"
+    ],
+    "names": [],
+    "file": "newsletter.css"
+}

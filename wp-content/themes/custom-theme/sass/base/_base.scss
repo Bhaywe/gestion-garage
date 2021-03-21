@@ -1,0 +1,23 @@
+@import "./variables";
+
+*,
+::after,
+::before {
+        margin: 0;
+        padding: 0;
+        box-sizing: inherit;
+}
+
+html {
+        font-size: 62.5%; // 1rem = 10 px
+}
+
+body {
+        box-sizing: border-box;
+        color: $color-secondary-dark;
+        background-color: $color-white;
+}
+
+a {
+        text-decoration: none;
+}

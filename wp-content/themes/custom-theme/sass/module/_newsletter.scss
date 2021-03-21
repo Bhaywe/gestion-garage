@@ -1,0 +1,17 @@
+.newsletter {
+     height: 40rem;
+
+     @include  responsive(tablet) { 
+          height: 25rem;
+     } 
+
+     h2 {
+          text-align: center;
+     }
+
+     &__form {
+          input {
+               margin-right: 3rem;
+          }
+     }
+}
