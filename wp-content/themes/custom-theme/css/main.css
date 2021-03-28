@@ -1413,4 +1413,17 @@ address {
     font-size: 1.6rem;
   }
 }
+
+.modale-accueil {
+  position: absolute;
+}
+
+.modale-accueil .modale-accueil-image {
+  width: 200px;
+  height: 200px;
+}
+
+.modale-accueil p {
+  color: blue;
+}
 /*# sourceMappingURL=main.css.map */
