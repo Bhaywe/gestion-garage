@@ -1,72 +1,72 @@
-@import "./variables";
+// @import "./variables";
 
-body {
-  font-family: $text-font;
-  font-size: $default-size;
-  font-weight: 400;
+// body {
+//   font-family: $text-font;
+//   font-size: $default-size;
+//   font-weight: 400;
 
-  @include responsive(phone) {
-    font-size: $small-size;
-  }
-}
+//   @include responsive(phone) {
+//     font-size: $small-size;
+//   }
+// }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  color: $color-primary;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   color: $color-primary;
+// }
 
-a {
-  text-decoration: none;
-}
+// a {
+//   text-decoration: none;
+// }
 
-.heading-primary {
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 4.8rem;
+// .heading-primary {
+//   font-size: 4rem;
+//   font-weight: 500;
+//   line-height: 4.8rem;
 
-  @include responsive(tablet) {
-    font-size: 3rem;
-    line-height: 3.6rem;
-  }
-}
+//   @include responsive(tablet) {
+//     font-size: 3rem;
+//     line-height: 3.6rem;
+//   }
+// }
 
-.heading-secondary {
-  font-weight: 500;
-  font-size: 3rem;
-  line-height: 3.6rem;
+// .heading-secondary {
+//   font-weight: 500;
+//   font-size: 3rem;
+//   line-height: 3.6rem;
 
-  @include responsive(tablet) {
-    font-size: 2.3rem;
-    line-height: 2.7rem;
-  }
+//   @include responsive(tablet) {
+//     font-size: 2.3rem;
+//     line-height: 2.7rem;
+//   }
 
-  &--dark {
-    color: $color-secondary-dark;
-    text-align: inherit;
-  }
-}
+//   &--dark {
+//     color: $color-secondary-dark;
+//     text-align: inherit;
+//   }
+// }
 
-.heading-tertiary {
-  font-size: 2.3rem;
-  font-weight: 500;
-  line-height: 2.8rem;
+// .heading-tertiary {
+//   font-size: 2.3rem;
+//   font-weight: 500;
+//   line-height: 2.8rem;
 
-  @include responsive(tablet) {
-    font-size: 2.3rem;
-    line-height: 2.8rem;
-  }
-}
+//   @include responsive(tablet) {
+//     font-size: 2.3rem;
+//     line-height: 2.8rem;
+//   }
+// }
 
-.heading-quaternary {
-  font-size: 1.8rem;
-  font-weight: 500;
-  line-height: 2.2rem;
+// .heading-quaternary {
+//   font-size: 1.8rem;
+//   font-weight: 500;
+//   line-height: 2.2rem;
 
-  &--dark {
-    color: inherit;
-  }
-}
+//   &--dark {
+//     color: inherit;
+//   }
+// }

@@ -11,11 +11,10 @@
 
 <body>
      <header class="header">
-          <div id="#test-script"></div>
-          <h1>custom <span>gear</span></h1>
-          <nav>
+          <h1 class="header-titre">custom <span>gear</span></h1>
+          <nav class="header-menu">
                <ul>
-                    <li><a href="http://dev-gestion.io/">Accueil</a></li>
+                    <li><a href="<?php the_permalink(2); ?>" > <?php echo get_the_title(2); ?></a></li>
                     <li>Calendrier</li>
                     <li>Archives</li>
                </ul>

@@ -7,8 +7,43 @@
           box-sizing: inherit;
 }
 
+html {
+  margin-top: 0px !important;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+body {
+  background-color: #161616;
+}
+
 a {
   text-decoration: none;
+  color: #f1f1f1;
+}
+
+.header {
+  margin-top: 80px;
+  background-color: rgba(242, 242, 242, 0.08);
+  height: 270px;
+  width: 100%;
+}
+
+.header-titre {
+  font-size: 96px;
+  letter-spacing: 25px;
+}
+
+.header-menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-menu li {
+  list-style-type: none;
+  margin-right: 25px;
 }
 
 .modale-accueil {
@@ -17,6 +52,7 @@ a {
   top: 0;
   width: 100vw;
   height: 100vh;
+  display: none;
 }
 
 .modale-accueil-image {

@@ -1,0 +1,20 @@
+.header {
+  margin-top: 80px;
+  background-color: rgba(242, 242, 242, 0.08);
+  height: 270px;
+  width: 100%;
+
+  &-titre {
+    font-size: 96px;
+    letter-spacing: 25px;
+  }
+  &-menu {
+    ul {
+      display: flex;
+    }
+    li {
+      list-style-type: none;
+      margin-right: 25px;
+    }
+  }
+}

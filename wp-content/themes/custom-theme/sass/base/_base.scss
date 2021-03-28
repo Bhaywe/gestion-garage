@@ -1,3 +1,5 @@
+@import "./variables";
+
 *,
 ::after,
 ::before {
@@ -6,6 +8,17 @@
   box-sizing: inherit;
 }
 
+html {
+  margin-top: 0px !important;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  background-color: #161616;
+}
+
 a {
   text-decoration: none;
+  color: $color-white;
 }
