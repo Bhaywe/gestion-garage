@@ -11,10 +11,11 @@
 
 <body>
      <header class="header">
+          <div id="#test-script"></div>
           <h1>custom <span>gear</span></h1>
           <nav>
                <ul>
-                    <li>Accueil</li>
+                    <li><a href="http://dev-gestion.io/">Accueil</a></li>
                     <li>Calendrier</li>
                     <li>Archives</li>
                </ul>

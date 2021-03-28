@@ -1,16 +1,11 @@
-$(function () {
-     $('.header__burger').click(() => {
-          $('.header__nav').toggleClass('translate');
-          $('.header__burger').toggleClass('toggle');
-     });
-});
+ jQuery(document).ready(function($) {
 
-// $(document).ready(function () {
-//      $('#loader').css('display', 'none');
-//      $('#wrapper').css('display', 'block');
-// });
-
-$(document).ready(function () {
-     $('#loader').hide();
-     $('#wrapper').show();
-});
+      $('.modale-accueil-bouton').click(function () {
+          $('.arrow').addClass('rotate-arrow');
+          $('#wrapper').addClass('close-modale');
+      });
+      
+     //  $('.modale-accueil-bouton').click(function(){
+     //      $('#wrapper').slideUp(400);
+     //    });
+   })

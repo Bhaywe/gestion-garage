@@ -1,19 +1,24 @@
 @mixin position {
-     position: absolute;
-     left: 50%;
-     top: 50%;
-     transform: translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-@mixin responsive($mymedia){
-     @if $mymedia == phone {
-             @media (max-width: 600px) { @content};
-     }
-     @if $mymedia == tablet {
-             @media (max-width: 900px) { @content};
-     }
-     @if $mymedia == desktop {
-             @media (max-width: 1200px) { @content};
-     }
-     
+@mixin responsive($mymedia) {
+  @if $mymedia == phone {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+  @if $mymedia == tablet {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if $mymedia == desktop {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  }
 }

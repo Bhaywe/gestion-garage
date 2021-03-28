@@ -26,5 +26,5 @@ class Init
         new Purchase();
         new Widgets();
         new Supports();
-    }
+    }   
 }
