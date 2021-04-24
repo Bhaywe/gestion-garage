@@ -20,7 +20,6 @@ class Scripts
     {
         wp_enqueue_style('style-principal', get_template_directory_uri() . '/css/main.css');
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css');
-        
     }
 
     public function enqueue_scripts()
