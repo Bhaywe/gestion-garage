@@ -13,7 +13,7 @@
 
 <body>
      <header class="header flex">
-          <div>
+          <div class="header-container">
                <h1 class="header-titre">custom <span>gear</span></h1>
                <nav class="header-menu">
                     <ul>
