@@ -8,6 +8,7 @@
       });
       
       $('.modale-accueil-bouton').click(function(){
-          $('#wrapper').slideUp(400);
+        $('#wrapper').slideUp(1000);
+        console.log("wtf")
         });
    })
