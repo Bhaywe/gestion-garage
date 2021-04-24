@@ -3,16 +3,44 @@
   background-color: rgba(242, 242, 242, 0.08);
   height: 270px;
   width: 100%;
+  padding: 0 400px;
+  display: flex;
+  align-items: center;
+
+  div{
+    margin-bottom: 20px;
+  }
 
   &-titre {
+    font-family: Ruda;
+    color: #F1F1F1;
     font-size: 96px;
-    letter-spacing: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 117px;
+    letter-spacing: 0.265em;
+    text-align: left;
+    text-shadow: 4px 4px #00000040;
+    text-transform: uppercase;
+    span{
+      color: #970000;
+    }    
   }
+
   &-menu {
     ul {
       display: flex;
+      margin-left: 10px;
     }
     li {
+      font-family: Merriweather;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 30px;
+      letter-spacing: 0em;
+      text-align: center;
+      color: #F1F1F1;
       list-style-type: none;
       margin-right: 25px;
     }

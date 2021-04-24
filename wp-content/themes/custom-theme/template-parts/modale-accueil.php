@@ -2,7 +2,7 @@
     <img src="<?php echo get_template_directory_uri(); ?>/img/modale-accueil.jpg" class="modale-accueil-image" alt="" />
 
     <div class="modale-accueil-titre">
-        <h1>custom <span>gear</span><h1>
+        <h1>custom <br><span>gear</span><h1>
     </div>
 
     <div class="modale-accueil-bouton">

@@ -1,14 +1,13 @@
  jQuery(document).ready(function($) {
-
-   $('#wrapper').show();
    
+   // Fermeture de la modale
       $('.modale-accueil-bouton').click(function () {
-          $('.arrow').addClass('rotate-arrow');
-          $('#wrapper').addClass('close-modale');
-      });
-      
-      $('.modale-accueil-bouton').click(function(){
+        $('.arrow').addClass('rotate-arrow');
+        $('#wrapper').addClass('close-modale');
         $('#wrapper').slideUp(1000);
-        console.log("wtf")
-        });
-   })
+
+        setTimeout(function() {
+          window.location.href = "/gestion"
+         }, 1000);
+      });
+});

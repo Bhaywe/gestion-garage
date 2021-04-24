@@ -1,6 +1,12 @@
+//base
 @import "./base/base";
 @import "./base/mixins";
+
 //@import "./base/typography";
+
+//layout
 @import "./layout/header";
 
-@import "./module/accueil-modale";
+//module
+@import "./module/modale-accueil";
+@import "./module/tableau-gestion-clients";
