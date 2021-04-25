@@ -13,7 +13,10 @@
    
    $('.ajout-client').click(function () {
      $('#modal').toggleClass("hide");
-     console.log("allo")
    });
    
+   $('.close').click(function () {
+    $('#modal').toggleClass("hide");
+  });
+
 });
