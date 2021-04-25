@@ -1,7 +1,10 @@
 <div class="tableau-clients">
     <div class="tableau-clients-header flex">
-        <h2>Gestion clients</h2><img src="<?php echo get_template_directory_uri(); ?>/img/add.svg" class="add" alt="bouton ajouter" />
+        <h2>Gestion clients</h2><img src="<?php echo get_template_directory_uri(); ?>/img/add.svg" class="ajout-client" alt="bouton ajouter" />
     </div>
+
+<!--  get template uri add-client-modal -->
+<?php get_template_part('template-parts/add-client-modal'); ?>
 
     <table>
         <tr>

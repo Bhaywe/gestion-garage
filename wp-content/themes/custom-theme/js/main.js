@@ -10,4 +10,10 @@
           window.location.href = "/gestion"
          }, 1000);
       });
+   
+   $('.ajout-client').click(function () {
+     $('#modal').toggleClass("hide");
+     console.log("allo")
+   });
+   
 });
