@@ -6,5 +6,5 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Effix\\' => array($baseDir . '/classes'),
+    'Customgear\\' => array($baseDir . '/classes'),
 );

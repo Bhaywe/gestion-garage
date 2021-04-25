@@ -1,29 +1,29 @@
 <?php
 
-namespace Effix;
+namespace Customgear;
 
-use Effix\Subscription\Purchase;
-// use Effix\Subscription\Update;
+use Customgear\Customclients\Clients;
+use Customgear\Customclients\Metabox;
 
-use Effix\Utilities\Title;
-use Effix\Utilities\Menu;
-use Effix\Utilities\Scripts;
-use Effix\Utilities\Widgets;
-use Effix\Utilities\Supports;
-use Effix\Subscription\Update;
+//old
+use Customgear\Utilities\Title;
+use Customgear\Utilities\Menu;
+use Customgear\Utilities\Scripts;
+use Customgear\Utilities\Widgets;
+use Customgear\Utilities\Supports;
 
-use Effix\Meta\User;
 
 class Init
 {
     public function __construct()
     {
-        new Update();
-        new User();
+        new Clients();
+        new Metabox();
+        
+        //old
         new Scripts();
         new Menu();
         new Title();
-        new Purchase();
         new Widgets();
         new Supports();
     }   

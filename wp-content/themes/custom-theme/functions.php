@@ -2,8 +2,8 @@
 
 require __DIR__ . '/vendor/autoload.php';
 
-use Effix\Activator;
+use Customgear\Activator;
 
 $activator = new Activator();
 
-$activator->effix_init();
+$activator->customgear_init();

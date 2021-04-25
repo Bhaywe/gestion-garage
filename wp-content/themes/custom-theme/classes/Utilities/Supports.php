@@ -1,6 +1,6 @@
 <?php
 
-namespace Effix\Utilities;
+namespace Customgear\Utilities;
 
 class Supports
 {

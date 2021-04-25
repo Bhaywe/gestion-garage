@@ -1,5 +1,5 @@
 {
-    "name": "bianka/effix",
+    "name": "bianka/customgear",
     "authors": [
         {
             "name": "Bianka",
@@ -9,7 +9,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "Effix\\": "classes"
+            "Customgear\\": "classes"
         }
     }
 }

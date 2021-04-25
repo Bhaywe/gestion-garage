@@ -1,12 +1,12 @@
 <?php
 
-namespace Effix;
+namespace Customgear;
 
-use Effix\Init;
+use Customgear\Init;
 
 class Activator
 {
-    function effix_init()
+    function customgear_init()
     {
         new Init();
         flush_rewrite_rules();
