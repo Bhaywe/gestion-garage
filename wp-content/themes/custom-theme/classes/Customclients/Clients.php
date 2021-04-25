@@ -75,7 +75,7 @@ class Clients
             'show_in_nav_menus'     => true,
             'show_in_rest'          => true,
             'query_var'             => true,
-            'rewrite'               => array('slug' => 'categorie', 'with_front' => true),
+            'rewrite'               => array('slug' => 'client', 'with_front' => true),
         ];
         register_taxonomy('clients', array('client'), $args);
     }

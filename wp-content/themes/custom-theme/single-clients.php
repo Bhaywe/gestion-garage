@@ -2,8 +2,11 @@
 get_header();
 ?>
 
+<!-- THE PLACE TO SHOW SINGLE CLIENT INFORMATION -->
+
 <section class="single container-big">
      <?php while (have_posts()) : the_post(); ?>
+
 
           <div class="single__thumb u-margin-top-big u-margin-bottom-mid" style="background-image:url(<?php echo get_the_post_thumbnail_url($post->ID); ?>);background-position:center;background-size:cover; background-repeat:no-repeat"></div>
 

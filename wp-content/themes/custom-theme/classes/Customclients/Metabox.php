@@ -37,6 +37,7 @@ class Metabox
                 return;
             }
 
+            update_post_meta($post->ID, "_nom_client", sanitize_text_field($_POST["_nom_client"]));
             update_post_meta($post->ID, "_courriel_client", sanitize_text_field($_POST["_courriel_client"]));
             update_post_meta($post->ID, "_numero_client", sanitize_text_field($_POST["_numero_client"]));
             update_post_meta($post->ID, "_date_client", sanitize_text_field($_POST["_date_client"]));
@@ -53,6 +54,7 @@ class Metabox
         if ($post_type == 'clients' && is_admin()) {
 
             $custom = get_post_custom($post->ID);
+            $nomClient = $custom["_nom_client"][0];
             $courrielClient = $custom["_courriel_client"][0];
             $numeroClient = $custom["_numero_client"][0];
             $dateClient = $custom["_date_client"][0];
@@ -75,6 +77,15 @@ class Metabox
             }
 
                 ?>
+                <br>
+                <div class="flex container">
+                    <div class="flex container_nom">
+                        <label for="_nom_client">Nom du client</label>
+                        <input type="text" name="_nom_client" value="<?php echo $nomClient ?>">
+                    </div>
+                </div>
+                <br>
+
                 <br>
                 <div class="flex container">
                     <div class="flex container_courriel">
@@ -109,14 +120,15 @@ class Metabox
                     </div>
                 </div>
                 <br>
-                <br>
+                <!-- <br>
                 <div class="flex container">
                     <div class="flex container_statut">
                         <label for="_statut_client">Statut</label>
-                        <input type="text" name="_statut_client" value="<?php echo $statutClient ?>">
+                        <input type="text" name="_statut_client" value="">
                     </div>
                 </div>
-
+                <br> -->
+                <br>
                 <div class="flex container_etat-suivi">
                     <label for="_statut_client">État du suivi</label>
                     <select name="_statut_client" id="_statut_client">
@@ -127,7 +139,6 @@ class Metabox
                 </div>
                 <br>
                 <?php
-            
         }
     }
 }
