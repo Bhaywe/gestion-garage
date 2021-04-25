@@ -1,9 +1,16 @@
+<div id="modal" class="add-client-modal hide flex">
 
-<div id="modal" class="add-client-modal hide">
+    <div class="fiche-technique">
+    <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close" alt="bouton fermer" />
+    
+        <h2 class="fiche-technique-titre">Fiche technique</h2>
 
-<h2></h2>
-ghfdgfhfsd
-<form>
 
-</form>
+    <form>
+    <!-- fields -->
+    </form>
+
+    </div>
+
+
 </div>
