@@ -61,6 +61,10 @@ class Metabox
             $coutClient = $custom["_cout_client"][0];
             $statutClient = $custom["_statut_client"][0];
 
+            $modeleVoiture = $custom["_modele_voiture"][0];
+            $anneeVoiture = $custom["_annee_voiture"][0];
+            $marqueVoiture = $custom["_marque_voiture"][0];
+            $reparationsVoiture = $custom["_reparations_voiture"][0];
 
             if (isset($statutClient)) {
                 switch ($statutClient) {
@@ -75,70 +79,103 @@ class Metabox
                         break;
                 }
             }
+?>
+            <br>
+            <div class="flex container">
+                <div class="flex container_nom">
+                    <label for="_nom_client">Nom du client</label>
+                    <input type="text" name="_nom_client" value="<?php echo $nomClient ?>">
+                </div>
+            </div>
+            <br>
 
-                ?>
-                <br>
-                <div class="flex container">
-                    <div class="flex container_nom">
-                        <label for="_nom_client">Nom du client</label>
-                        <input type="text" name="_nom_client" value="<?php echo $nomClient ?>">
-                    </div>
+            <br>
+            <div class="flex container">
+                <div class="flex container_courriel">
+                    <label for="_courriel_client">Courriel client</label>
+                    <input type="email" name="_courriel_client" value="<?php echo $courrielClient ?>">
                 </div>
-                <br>
+            </div>
+            <br>
 
-                <br>
-                <div class="flex container">
-                    <div class="flex container_courriel">
-                        <label for="_courriel_client">Courriel client</label>
-                        <input type="email" name="_courriel_client" value="<?php echo $courrielClient ?>">
-                    </div>
+            <br>
+            <div class="flex container">
+                <div class="flex container_numero">
+                    <label for="_numero_client">Numéro de téléphone</label>
+                    <input type="text" name="_numero_client" value="<?php echo $numeroClient ?>">
                 </div>
-                <br>
+            </div>
+            <br>
 
-                <br>
-                <div class="flex container">
-                    <div class="flex container_numero">
-                        <label for="_numero_client">Numéro de téléphone</label>
-                        <input type="text" name="_numero_client" value="<?php echo $numeroClient ?>">
-                    </div>
+            <br>
+            <div class="flex container">
+                <div class="flex container_date">
+                    <label for="_date_client">Date et heure du rendez-vous</label>
+                    <input type="datetime-local" name="_date_client" value="<?php echo $dateClient ?>">
                 </div>
-                <br>
+            </div>
+            <br>
 
-                <br>
-                <div class="flex container">
-                    <div class="flex container_date">
-                        <label for="_date_client">Date et heure du rendez-vous</label>
-                        <input type="datetime-local" name="_date_client" value="<?php echo $dateClient ?>">
-                    </div>
+            <!-- -------------- -->
+
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_modele_voiture">Modèle de la voiture</label>
+                    <input type="text" name="_modele_voiture" value="<?php echo $modeleVoiture ?>">
                 </div>
-                <br>
-                <br>
-                <div class="flex container">
-                    <div class="flex container_cout">
-                        <label for="_cout_client">Coûts des réparations</label>
-                        <input type="text" name="_cout_client" value="<?php echo $coutClient ?>">
-                    </div>
+            </div>
+            <br>
+
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_annee_voiture">Année de la voiture</label>
+                    <input type="text" name="_annee_voiture" value="<?php echo $anneeVoiture ?>">
                 </div>
-                <br>
-                <!-- <br>
-                <div class="flex container">
-                    <div class="flex container_statut">
-                        <label for="_statut_client">Statut</label>
-                        <input type="text" name="_statut_client" value="">
-                    </div>
+            </div>
+            <br>
+
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_marque_voiture">Marque de la voiture</label>
+                    <input type="text" name="_marque_voiture" value="<?php echo $marqueVoiture ?>">
                 </div>
-                <br> -->
-                <br>
-                <div class="flex container_etat-suivi">
-                    <label for="_statut_client">État du suivi</label>
-                    <select name="_statut_client" id="_statut_client">
-                        <option value="En attente" id="state-en-cours" <?php echo $attenteSelected ?>>En attente</option>
-                        <option value="En cours" id="state-en-cours" <?php echo $encoursSelected ?>>En cours</option>
-                        <option value="Terminé" id="state-done" <?php echo $terminerSelected ?>>Terminé</option>
-                    </select>
+            </div>
+            <br>
+
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_reparations_voiture">Réparation/inspection à effectuer</label>
+                    <input type="textarea" name="_reparations_voiture" value="<?php echo $reparationsVoiture ?>">
                 </div>
-                <br>
-                <?php
+            </div>
+            <br>
+
+            <!-- -------------- -->
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_cout_client">Coûts des réparations</label>
+                    <input type="text" name="_cout_client" value="<?php echo $coutClient ?>">
+                </div>
+            </div>
+            <br>
+
+
+            <br>
+            <div class="flex container_etat-suivi">
+                <label for="_statut_client">État du suivi</label>
+                <select name="_statut_client" id="_statut_client">
+                    <option value="En attente" id="state-en-cours" <?php echo $attenteSelected ?>>En attente</option>
+                    <option value="En cours" id="state-en-cours" <?php echo $encoursSelected ?>>En cours</option>
+                    <option value="Terminé" id="state-done" <?php echo $terminerSelected ?>>Terminé</option>
+                </select>
+            </div>
+            <br>
+<?php
         }
     }
 }

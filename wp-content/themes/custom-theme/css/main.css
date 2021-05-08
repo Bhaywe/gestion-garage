@@ -300,4 +300,78 @@ tr:nth-child(even) {
   background-color: rgba(241, 241, 241, 0.08);
   padding: 10px;
 }
+
+.form-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form-container form {
+  width: 100%;
+}
+
+.form-container-section {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contaimer-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaimer-textarea textarea {
+  width: 86%;
+  height: 150px;
+  padding: 5px;
+}
+
+.form-add-client-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 45%;
+}
+
+.form-add-client-section input {
+  width: 90%;
+  padding: 5px;
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.textarea-reparations {
+  padding: 0 40px;
+}
+
+.textarea-reparations textarea {
+  height: 100px;
+}
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the WordPress - 5.7.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-04-22 07:11:41+0000\n"
+"PO-Revision-Date: 2021-05-06 08:11:20+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -472,7 +472,7 @@ msgstr "Impossible d’initier la confirmation pour la demande de données perso
 
 #: wp-admin/options-writing.php:210 wp-admin/options-writing.php:224
 msgid "https://wordpress.org/support/article/update-services/"
-msgstr "https://fr.wordpress.org/support/article/settings-writing-screen/#services-de-mises-%c3%a0-jour"
+msgstr "https://fr.wordpress.org/support/article/settings-writing-screen/#services-de-mises-a-jour"
 
 #. translators: %s: The server PHP version.
 #: wp-admin/includes/dashboard.php:1771
@@ -1955,7 +1955,7 @@ msgstr "<a href=\"https://fr.wordpress.org/support/article/tools-export-screen/\
 
 #: wp-admin/plugin-install.php:109
 msgid "<a href=\"https://wordpress.org/support/article/plugins-add-new-screen/\">Documentation on Installing Plugins</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/plugins-add-new-screen/\">Documentation sur l’installation d’extensions (en anglais)</a>"
+msgstr "<a href=\"https://fr.wordpress.org/support/article/plugins-add-new-screen/\">Documentation sur l’installation d’extensions</a>"
 
 #: wp-admin/edit.php:309
 msgid "<a href=\"https://wordpress.org/support/article/pages-screen/\">Documentation on Managing Pages</a>"
@@ -2082,7 +2082,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/nginx/\">Documentation s
 
 #: wp-admin/options-permalink.php:212
 msgid "https://wordpress.org/support/article/using-permalinks/"
-msgstr "https://wordpress.org/support/article/using-permalinks/"
+msgstr "https://fr.wordpress.org/support/article/using-permalinks/"
 
 #: wp-admin/options-permalink.php:61
 msgid "<a href=\"https://wordpress.org/support/article/using-permalinks/\">Documentation on Using Permalinks</a>"
@@ -2098,7 +2098,7 @@ msgstr "<a href=\"https://fr.wordpress.org/support/article/dashboard-updates-scr
 
 #: wp-admin/nav-menus.php:658
 msgid "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation on Menus</a>"
-msgstr "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation sur les menus (en anglais)</a>"
+msgstr "<a href=\"https://fr.wordpress.org/support/article/appearance-menus-screen/\">Documentation sur les menus</a>"
 
 #: wp-admin/plugin-editor.php:143
 msgid "<a href=\"https://developer.wordpress.org/plugins/\">Documentation on Writing Plugins</a>"
@@ -2162,7 +2162,7 @@ msgstr "https://fr.wordpress.org/support/article/first-steps-with-wordpress/"
 #: wp-admin/plugin-editor.php:296 wp-admin/options-permalink.php:366
 #: wp-admin/options-permalink.php:391 wp-admin/options-permalink.php:424
 msgid "https://wordpress.org/support/article/changing-file-permissions/"
-msgstr "https://wordpress.org/support/article/changing-file-permissions/"
+msgstr "https://fr.wordpress.org/support/article/changing-file-permissions/"
 
 #. translators: %s: Documentation URL.
 #: wp-admin/includes/file.php:323 wp-admin/theme-editor.php:322
@@ -2242,7 +2242,7 @@ msgstr "<a href=\"https://fr.wordpress.org/support/article/network-admin-sites-s
 
 #: wp-admin/includes/meta-boxes.php:807
 msgid "https://wordpress.org/support/article/introduction-to-blogging/#managing-comments"
-msgstr "https://fr.wordpress.org/support/article/introduction-to-blogging/#grer-les-commentaires"
+msgstr "https://fr.wordpress.org/support/article/introduction-to-blogging/#gerer-les-commentaires"
 
 #: wp-admin/includes/meta-boxes.php:783
 msgid "https://wordpress.org/support/article/custom-fields/"
@@ -5614,11 +5614,11 @@ msgstr "Importer des articles depuis un flux RSS."
 
 #: wp-admin/includes/import.php:209
 msgid "Import posts and comments from a Movable Type or TypePad blog."
-msgstr "Importer les articles et commentaires depuis un blog Movable Type ou TypePad."
+msgstr "Importer des articles et commentaires depuis un blog Movable Type ou TypePad."
 
 #: wp-admin/includes/import.php:203
 msgid "Import posts from LiveJournal using their API."
-msgstr "Importer les articles depuis LiveJournal par le biais de leur API."
+msgstr "Importer des articles depuis LiveJournal via leur API."
 
 #: wp-admin/includes/import.php:197
 msgid "Convert existing categories to tags or tags to categories, selectively."
