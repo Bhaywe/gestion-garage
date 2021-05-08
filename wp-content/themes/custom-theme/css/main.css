@@ -24,6 +24,12 @@ a {
   color: #f1f1f1;
 }
 
+input, textarea {
+  padding: 5px;
+  background-color: #F1F1F1;
+  border: none;
+}
+
 .header {
   margin-top: 80px;
   background-color: rgba(242, 242, 242, 0.08);
@@ -203,7 +209,7 @@ a {
   margin: auto;
 }
 
-h2 {
+.tableau-clients-header h2 {
   font-family: Merriweather;
   color: #F1F1F1;
   font-size: 58px;
@@ -279,7 +285,7 @@ tr:nth-child(even) {
   position: relative;
   left: 20px;
   top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
 .fiche-technique {
@@ -287,6 +293,7 @@ tr:nth-child(even) {
   height: 693px;
   margin: auto;
   background-color: #161616;
+  border-radius: 15px;
 }
 
 .fiche-technique h2 {
@@ -298,7 +305,8 @@ tr:nth-child(even) {
   letter-spacing: 0em;
   text-align: left;
   background-color: rgba(241, 241, 241, 0.08);
-  padding: 10px;
+  padding: 10px 0 10px 40px;
+  margin: 20px 0;
 }
 
 .form-container {
@@ -316,37 +324,37 @@ tr:nth-child(even) {
 
 .form-container form {
   width: 100%;
+  margin: 0 30px;
 }
 
 .form-container-section {
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .contaimer-textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin-top: -20px;
 }
 
 .contaimer-textarea textarea {
-  width: 86%;
   height: 150px;
-  padding: 5px;
 }
 
 .form-add-client-section {
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -354,24 +362,27 @@ tr:nth-child(even) {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 45%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
 }
 
 .form-add-client-section input {
-  width: 90%;
-  padding: 5px;
   height: 20px;
   margin-bottom: 20px;
 }
 
-.textarea-reparations {
-  padding: 0 40px;
+.textarea-reparations textarea {
+  height: 80px;
 }
 
-.textarea-reparations textarea {
-  height: 100px;
+.form__button {
+  text-align: right;
+  margin: 5px 10px 0 0;
+}
+
+.form__button input {
+  padding: 5px 10px;
 }
 /*# sourceMappingURL=main.css.map */

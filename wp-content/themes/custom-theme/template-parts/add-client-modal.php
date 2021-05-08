@@ -10,39 +10,48 @@
 
                 <div class="flex form-container-section">
                     <div class="form-add-client-section">
-                        <input type="text" name="nom" placeholder="Nom du client" required>
 
-                        <input type="email" name="courriel" placeholder="Courriel du client" required>
+                        <label for="fname">Nom du client</label>
+                        <input type="text" name="nom" required>
 
-                        <input type="number" name="numero" placeholder="Numéro de téléphone" required>
+                        <label for="fname">Courriel du client</label>
+                        <input type="email" name="courriel" required>
 
-                        <input type="datetime-local" name="date" placeholder="Date et heure de rendez-vous" required>
+                        <label for="fname">Numéro de téléphone</label>
+                        <input type="number" name="numero" required>
+
+                        <label for="fname">Date et heure de rendez-vous</label>
+                        <input type="datetime-local" name="date">
                     </div>
 
 
                     <div class="form-add-client-section">
-                        <input type="text" name="cout" placeholder="Coût des réparations" required>
+                        <label for="fname">Coût des réparations</label>
+                        <input type="text" name="cout">
 
-                        <input type="text" name="modele" placeholder="Modèle de la voiture" required>
+                        <label for="fname">Modèle de la voiture</label>
+                        <input type="text" name="modele">
 
-                        <input type="text" name="marque" placeholder="Marque de la voiture" required>
+                        <label for="fname">Marque de la voiture</label>
+                        <input type="text" name="marque">
 
-                        <input type="text" name="annee" placeholder="Année de la voiture" required>
+                        <label for="fname">Année de la voiture</label>
+                        <input type="text" name="annee">
                     </div>
 
                 </div>
 
                 <div class="contaimer-textarea">
-                    <textarea type="text" name="reparations" placeholder="Réparation/inspection à effectuer" required></textarea>
+                    <label for="fname">Réparation/inspection à effectuer</label>
+                    <textarea type="text" name="reparations"></textarea>
                 </div>
 
                 <input type="hidden" name="action" value="add_clients_form" />
                 <div class="form__button center">
-                    <input type="submit" value="Envoyer" class="btn u-margin-top-normal">
+                    <input type="submit" value="Ajouter" class="btn u-margin-top-normal">
                 </div>
             </form>
         </div>
-
 
     </div>
 </div>
