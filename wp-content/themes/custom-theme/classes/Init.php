@@ -21,6 +21,7 @@ class Init
         new Clients();
         new Metabox();
         new addclient();
+
         //old
         new Scripts();
         new Menu();
