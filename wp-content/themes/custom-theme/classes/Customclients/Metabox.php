@@ -82,9 +82,6 @@ class Metabox
                 }
             }
 ?>
-
-            <p>Id du client: <?php $post->ID ?></p>
-
             <br>
             <div class="flex container">
                 <div class="flex container_nom">
