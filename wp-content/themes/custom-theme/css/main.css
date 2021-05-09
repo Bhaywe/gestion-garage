@@ -309,16 +309,16 @@ tr:nth-child(even) {
   margin: 20px 0;
 }
 
-.form-container {
+.form-container, .form-container-edit {
   width: 80%;
   margin: auto;
 }
 
-.form-container form {
+.form-container form, .form-container-edit form {
   width: 100%;
 }
 
-.form-container-section {
+.form-container-section, .form-container-edit-section {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;

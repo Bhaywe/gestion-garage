@@ -45,7 +45,7 @@
                 jQuery(document).ready(function($) {
                     $('._nom_client-<?php echo $post->ID ?>').click(function() {
                         $('#modal-edit-<?php echo $post->ID ?>').toggleClass("hide-edit");
-                        $('.form-container').load('<?php the_permalink($post->ID); ?>');
+                        $('.form-container-edit').load('<?php the_permalink($post->ID); ?>');
                     });
 
                     $('.close-edit-<?php echo $post->ID ?>').click(function() {
@@ -73,9 +73,9 @@
 
             <div id="modal-edit-<?php echo $post->ID ?>" class="edit-client-modal hide-edit flex">
                 <div class="fiche-technique">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-edit-<?php echo $post->ID ?>" alt="bouton fermer" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-edit close-edit-<?php echo $post->ID ?>" alt="bouton fermer" />
                     <h2 class="fiche-technique-titre">Fiche technique</h2>
-                    <div class="form-container">
+                    <div class="form-container-edit">
                     </div>
                 </div>
             </div>
@@ -84,9 +84,9 @@
 
             <div id="modal-show-<?php echo $post->ID ?>" class="show-client-modal hide-show flex">
                 <div class="fiche-technique">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-show-<?php echo $post->ID ?>" alt="bouton fermer" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-show close-show-<?php echo $post->ID ?>" alt="bouton fermer" />
                     <h2 class="fiche-technique-titre">Fiche technique</h2>
-                    <div class="form-container">
+                    <div class="container-information">
                         information à venir
                     </div>
 
