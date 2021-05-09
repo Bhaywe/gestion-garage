@@ -268,15 +268,11 @@ tr:nth-child(even) {
   padding-bottom: 15px;
 }
 
-.hide {
+.hide, .hide-edit, .hide-show {
   display: none;
 }
 
-.hide-edit {
-  display: none;
-}
-
-.add-client-modal, .edit-client-modal {
+.add-client-modal, .edit-client-modal, .show-client-modal {
   position: absolute;
   top: 0;
   left: 0;
@@ -285,7 +281,7 @@ tr:nth-child(even) {
   background-color: rgba(196, 196, 196, 0.65);
 }
 
-.close, .close-edit {
+.close, .close-edit, .close-show {
   position: relative;
   left: 20px;
   top: 20px;
@@ -314,21 +310,12 @@ tr:nth-child(even) {
 }
 
 .form-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  width: 80%;
+  margin: auto;
 }
 
 .form-container form {
   width: 100%;
-  margin: 0 30px;
 }
 
 .form-container-section {

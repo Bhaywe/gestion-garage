@@ -5,6 +5,7 @@ namespace Customgear;
 use Customgear\Customclients\Clients;
 use Customgear\Customclients\Metabox;
 use Customgear\Custompost\addclient;
+use Customgear\Custompost\editclient;
 
 //old
 use Customgear\Utilities\Title;
@@ -21,6 +22,7 @@ class Init
         new Clients();
         new Metabox();
         new addclient();
+        new editclient();
 
         //old
         new Scripts();

@@ -13,15 +13,14 @@ class editclient
     // Créer un nouveau suivis client ainsi qu'un client
     public function edit_clients()
     {
-
-        $nouveau_client = [
-            'ID'           => 2,
-            'post_title'   => $_POST['nom'],
-            'post_status'  => "publish",
-            'post_type'    => 'clients',
+        $edit_client = [
+            'ID'          => $_POST['idclient'],
+            'post_title'  => $_POST['nom'],
+            'post_status' => "publish",
+            'post_type'   => 'clients',
         ];
 
-        $thissuivi = wp_update_post($nouveau_client);
+        $thissuivi = wp_update_post($edit_client);
 
         update_post_meta($thissuivi, '_nom_client', $_POST['nom']);
         update_post_meta($thissuivi, '_courriel_client', $_POST['courriel']);
