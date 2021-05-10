@@ -87,7 +87,9 @@
                     <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-show close-show-<?php echo $post->ID ?>" alt="bouton fermer" />
                     <h2 class="fiche-technique-titre">Fiche technique</h2>
                     <div class="container-information">
-                        information à venir
+
+                        <p>Information sur le client à venir</p>
+
                     </div>
 
                 </div>
