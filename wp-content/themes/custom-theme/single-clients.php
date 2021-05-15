@@ -73,7 +73,7 @@
                <input type="hidden" name="action" value="edit_clients_form" />
                <div class="form__button center">
                     <input type="submit" value="Modifier" class="modifier btn u-margin-top-normal">
-                    <a href="<?php echo get_delete_post_link($post->ID, '', true) ?>">Supprimer</a>
+                    <a href="<?php echo get_delete_post_link($post->ID, '', true) ?>" onclick="return confirm('Are you sure you want to delete this item?');">Supprimer</a>
                </div>
 
           </form>
