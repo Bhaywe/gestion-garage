@@ -1,13 +1,11 @@
-<!-- THE PLACE TO SHOW SINGLE CLIENT INFORMATION -->
-
-<section class="single container-big">
+<section class="container-big">
      <?php while (have_posts()) : the_post(); ?>
 
           <form method="POST" id="formsuivi" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
 
                <div class="flex form-container-section">
 
-                    <div class="form-add-client-section">
+                    <div class="form-edit-client-section">
                          <label for="nom">Nom du client</label>
                          <input type="text" name="nom" value="<?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?>" required>
 
@@ -23,7 +21,7 @@
 
                     <!-- Statut client à rajouter -->
 
-                    <div class="form-add-client-section">
+                    <div class="form-edit-client-section">
                          <label for="cout">Coût des réparations</label>
                          <input type="text" name="cout" value="<?php echo get_post_meta(get_the_ID(), '_cout_client', true) ?>">
 

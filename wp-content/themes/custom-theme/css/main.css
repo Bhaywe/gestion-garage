@@ -268,11 +268,11 @@ tr:nth-child(even) {
   padding-bottom: 15px;
 }
 
-.hide, .hide-edit, .hide-show {
+.hide {
   display: none;
 }
 
-.add-client-modal, .edit-client-modal, .show-client-modal {
+.add-client-modal {
   position: absolute;
   top: 0;
   left: 0;
@@ -281,7 +281,7 @@ tr:nth-child(even) {
   background-color: rgba(196, 196, 196, 0.65);
 }
 
-.close, .close-edit, .close-show {
+.close {
   position: relative;
   left: 20px;
   top: 20px;
@@ -309,16 +309,16 @@ tr:nth-child(even) {
   margin: 20px 0;
 }
 
-.form-container, .form-container-edit {
+.form-container {
   width: 80%;
   margin: auto;
 }
 
-.form-container form, .form-container-edit form {
+.form-container form {
   width: 100%;
 }
 
-.form-container-section, .form-container-edit-section {
+.form-container-section {
   width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -375,5 +375,134 @@ tr:nth-child(even) {
 
 .form__button input {
   padding: 5px 10px;
+}
+
+.hide-edit {
+  display: none;
+}
+
+.edit-client-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(196, 196, 196, 0.65);
+}
+
+.close-edit {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  margin-bottom: 15px;
+}
+
+.edit-fiche-technique {
+  width: 712px;
+  height: 693px;
+  margin: auto;
+  background-color: #161616;
+  border-radius: 15px;
+}
+
+.edit-fiche-technique h2 {
+  font-family: Merriweather;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: rgba(241, 241, 241, 0.08);
+  padding: 10px 0 10px 40px;
+  margin: 20px 0;
+}
+
+.form-container-edit {
+  width: 80%;
+  margin: auto;
+}
+
+.form-container-edit form {
+  width: 100%;
+}
+
+.form-container-edit-section {
+  width: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contaimer-textarea {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px;
+  margin-top: -20px;
+}
+
+.contaimer-textarea textarea {
+  height: 150px;
+}
+
+.form-edit-client-section {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.form-edit-client-section input {
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+.textarea-reparations textarea {
+  height: 80px;
+}
+
+.form__button {
+  text-align: right;
+  margin: 5px 10px 0 0;
+}
+
+.form__button input {
+  padding: 5px 10px;
+}
+
+.hide-show {
+  display: none;
+}
+
+.close-show {
+  position: relative;
+  left: 20px;
+  top: 20px;
+  margin-bottom: 15px;
+}
+
+.show-client-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(196, 196, 196, 0.65);
 }
 /*# sourceMappingURL=main.css.map */

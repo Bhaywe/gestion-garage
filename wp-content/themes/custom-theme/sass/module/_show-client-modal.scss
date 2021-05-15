@@ -1,0 +1,19 @@
+.hide-show{
+    display: none;
+}
+
+.close-show{
+    position: relative;
+    left: 20px;
+    top: 20px;
+    margin-bottom: 15px;
+}
+
+.show-client-modal{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(196, 196, 196, 0.65);
+}

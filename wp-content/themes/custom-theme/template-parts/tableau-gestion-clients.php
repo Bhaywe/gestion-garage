@@ -3,7 +3,6 @@
         <h2>Gestion clients</h2><img src="<?php echo get_template_directory_uri(); ?>/img/add.svg" class="ajout-client" alt="bouton ajouter" />
     </div>
 
-    <!--  get template uri add-client-modal -->
     <?php
     get_template_part('template-parts/add-client-modal');
     ?>
@@ -23,7 +22,6 @@
             </td>
         </tr>
 
-        <!-- customer loop here -->
         <?php
         $loop = new WP_Query(
             array(
@@ -72,7 +70,7 @@
             </tr>
 
             <div id="modal-edit-<?php echo $post->ID ?>" class="edit-client-modal hide-edit flex">
-                <div class="fiche-technique">
+                <div class="edit-fiche-technique">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-edit close-edit-<?php echo $post->ID ?>" alt="bouton fermer" />
                     <h2 class="fiche-technique-titre">Fiche technique</h2>
                     <div class="form-container-edit">
@@ -91,16 +89,12 @@
                         <p>Information sur le client à venir</p>
 
                     </div>
-
                 </div>
             </div>
 
         <?php
-
         endwhile;
-
         wp_reset_query();
-
         ?>
 
     </table>

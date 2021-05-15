@@ -1,8 +1,8 @@
-.hide, .hide-edit, .hide-show{
+.hide{
     display: none;
 }
 
-.add-client-modal, .edit-client-modal, .show-client-modal{
+.add-client-modal{
     position: absolute;
     top: 0;
     left: 0;
@@ -11,7 +11,7 @@
     background-color: rgba(196, 196, 196, 0.65);
 }
 
-.close, .close-edit, .close-show{
+.close{
     position: relative;
     left: 20px;
     top: 20px;
@@ -39,7 +39,7 @@
     }
 }
 
-.form-container, .form-container-edit{
+.form-container{
     width: 80%;
     margin: auto;
     form{
