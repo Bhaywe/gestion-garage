@@ -27,12 +27,15 @@ class editclient
         update_post_meta($thissuivi, '_numero_client', $_POST['numero']);
         update_post_meta($thissuivi, '_date_client', $_POST['date']);
         update_post_meta($thissuivi, '_cout_client', $_POST['cout']);
-        update_post_meta($thissuivi, '_statut_client', 'En attente');
+        update_post_meta($thissuivi, '_statut_client', $_POST['statut']);
 
         update_post_meta($thissuivi, '_modele_voiture', $_POST['modele']);
         update_post_meta($thissuivi, '_annee_voiture', $_POST['annee']);
         update_post_meta($thissuivi, '_marque_voiture', $_POST['marque']);
+
         update_post_meta($thissuivi, '_reparations_voiture', $_POST['reparations']);
+        update_post_meta($thissuivi, '_reparations_effectuer', $_POST['reparations-done']);
+        update_post_meta($thissuivi, '_recommandations_voiture', $_POST['recommandations']);
 
         $page = get_page_by_title('gestion');
         wp_redirect(get_permalink($page->ID));

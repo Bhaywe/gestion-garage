@@ -6,7 +6,7 @@
         <h2 class="fiche-technique-titre">Fiche technique</h2>
 
         <div class="form-container">
-            <form method="POST" id="formsuivi" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
+            <form method="POST" id="add-client-form" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
 
                 <div class="flex form-container-section">
                     <div class="form-add-client-section">

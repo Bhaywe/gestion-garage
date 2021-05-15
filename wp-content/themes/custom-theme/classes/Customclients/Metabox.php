@@ -65,8 +65,7 @@ class Metabox
             $modeleVoiture = $custom["_modele_voiture"][0];
             $anneeVoiture = $custom["_annee_voiture"][0];
             $marqueVoiture = $custom["_marque_voiture"][0];
-            $reparationsVoiture = $custom["_reparations_voiture"][0];
-            $cliendId = $custom["_client_id"][0];
+
 
             if (isset($statutClient)) {
                 switch ($statutClient) {
@@ -165,7 +164,6 @@ class Metabox
                 </div>
             </div>
             <br>
-
 
             <br>
             <div class="flex container_etat-suivi">

@@ -18,14 +18,4 @@
    $('.close').click(function () {
     $('#modal-add').toggleClass("hide");
    });
-
-  //  $('._nom_client').click(function () {
-  //   $('#modal-edit').toggleClass("hide-edit");
-  //  });
-   
-  //  $('.close-edit').click(function () {
-  //   $('#modal-edit').toggleClass("hide-edit");
-  //  });
-   
-
 });

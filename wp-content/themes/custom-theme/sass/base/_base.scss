@@ -24,8 +24,23 @@ a {
   color: $color-white;
 }
 
-input, textarea{
+input, textarea, option, select{
   padding: 5px;
   background-color: #F1F1F1;
   border: none;
+}
+
+input{
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+select#statut{
+  height: 20px;
+  margin-bottom: 20px;
+}
+
+textarea{
+  height: 150px;
+  resize: none;
 }
