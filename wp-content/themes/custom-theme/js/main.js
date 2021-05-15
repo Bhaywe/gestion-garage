@@ -18,4 +18,9 @@
    $('.close').click(function () {
     $('#modal-add').toggleClass("hide");
    });
+
+  //  $(document).on('change', '#temps', function () {
+  //    console.log($('#temps').val())
+  //  });
+
 });

@@ -18,14 +18,12 @@
                          <label for="date">Date et heure de rendez-vous</label>
                          <input type="datetime-local" value="<?php echo get_post_meta(get_the_ID(), '_date_client', true) ?>" name="date">
 
-                         <label for="temps">Duré des réparations</label>
+                         <label for="temps">Durée des réparation</label>
                          <input type="text" value="<?php echo get_post_meta(get_the_ID(), '_temps_client', true) ?>" name="temps">
                     </div>
 
-                    <!-- Statut client à rajouter -->
-
                     <div class="form-edit-client-section">
-                         <label for="statut">État du suivi: <?php echo get_post_meta(get_the_ID(), '_statut_client', true) ?></label>
+                         <label for="statut">État du suivi</label>
                          <select name="statut" id="statut">
                               <option value="En attente" id="attente" <?php if (get_post_meta(get_the_ID(), '_statut_client', true) == "En attente") {
                                                                            echo "selected";
