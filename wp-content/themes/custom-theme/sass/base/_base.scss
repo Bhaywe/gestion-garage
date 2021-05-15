@@ -24,6 +24,11 @@ a {
   color: $color-white;
 }
 
+label{
+  margin-bottom: 3px;
+  color: #F1F1F1;
+}
+
 input, textarea, option, select{
   padding: 5px;
   background-color: #F1F1F1;

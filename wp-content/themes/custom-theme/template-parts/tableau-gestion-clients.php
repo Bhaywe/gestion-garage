@@ -72,7 +72,7 @@
             <div id="modal-edit-<?php echo $post->ID ?>" class="edit-client-modal hide-edit flex">
                 <div class="edit-fiche-technique">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-edit close-edit-<?php echo $post->ID ?>" alt="bouton fermer" />
-                    <h2 class="fiche-technique-titre">Fiche technique</h2>
+                    <h2 class="fiche-technique-titre">Fiche technique de <?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?></h2>
                     <div class="form-container-edit">
                     </div>
                 </div>

@@ -50,20 +50,18 @@
                     </div>
                </div>
 
-               <div class="contaimer-textarea">
-                    <label for="reparations">Réparation/inspection à effectuer</label>
-                    <textarea type="text" name="reparations" /><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></textarea>
-               </div><br>
+               <div class="flex">
+                    <div class="contaimer-textarea">
+                         <label for="reparations">Réparation/inspection à effectuer</label>
+                         <textarea type="text" name="reparations" /><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></textarea>
+                    </div><br>
 
-               <div class="contaimer-textarea">
-                    <label for="reparations-done">Réparations effectués</label>
-                    <textarea type="text" name="reparations-done" /><?php echo get_post_meta(get_the_ID(), '_reparations_effectuer', true) ?></textarea>
-               </div><br>
+                    <div class="contaimer-textarea">
+                         <label for="reparations-done">Réparations effectués</label>
+                         <textarea type="text" name="reparations-done" /><?php echo get_post_meta(get_the_ID(), '_reparations_effectuer', true) ?></textarea>
+                    </div><br>
+               </div>
 
-               <div class="contaimer-textarea">
-                    <label for="recommandations">Réparation/inspection à effectuer</label>
-                    <textarea type="text" name="recommandations" /><?php echo get_post_meta(get_the_ID(), '_recommandations_voiture', true) ?></textarea>
-               </div><br>
 
                <!-- on enregistre le id afind de pouvoir modifier le post -->
                <input type="hidden" name="idclient" value="<?php echo get_post_meta(get_the_ID(), '_client_id', true) ?>" />

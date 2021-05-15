@@ -24,6 +24,11 @@ a {
   color: #f1f1f1;
 }
 
+label {
+  margin-bottom: 3px;
+  color: #F1F1F1;
+}
+
 input, textarea, option, select {
   padding: 5px;
   background-color: #F1F1F1;
@@ -428,11 +433,11 @@ tr:nth-child(even) {
   background-color: rgba(241, 241, 241, 0.08);
   padding: 10px 0 10px 40px;
   margin: 20px 0;
+  padding-left: 310px;
 }
 
 .form-container-edit {
-  width: 50%;
-  margin: auto;
+  margin: 0 300px;
 }
 
 .form-container-edit form {
@@ -447,9 +452,7 @@ tr:nth-child(even) {
 }
 
 .contaimer-textarea {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;

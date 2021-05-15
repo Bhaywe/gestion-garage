@@ -36,7 +36,6 @@ class editclient
 
         update_post_meta($thissuivi, '_reparations_voiture', $_POST['reparations']);
         update_post_meta($thissuivi, '_reparations_effectuer', $_POST['reparations-done']);
-        update_post_meta($thissuivi, '_recommandations_voiture', $_POST['recommandations']);
 
         $page = get_page_by_title('gestion');
         wp_redirect(get_permalink($page->ID));
