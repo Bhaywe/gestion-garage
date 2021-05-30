@@ -72,7 +72,7 @@
             <div id="modal-edit-<?php echo $post->ID ?>" class="edit-client-modal hide-edit flex">
                 <div class="edit-fiche-technique">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-edit close-edit-<?php echo $post->ID ?>" alt="bouton fermer" />
-                    <h2 class="fiche-technique-titre">Fiche technique de <?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?></h2>
+                    <h2 class="fiche-technique-titre-edit">Fiche technique de <?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?></h2>
                     <div class="form-container-edit">
                     </div>
                 </div>
@@ -83,11 +83,35 @@
             <div id="modal-show-<?php echo $post->ID ?>" class="show-client-modal hide-show flex">
                 <div class="fiche-technique">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close-show close-show-<?php echo $post->ID ?>" alt="bouton fermer" />
-                    <h2 class="fiche-technique-titre">Fiche technique</h2>
+                    <h2 class="fiche-technique-titre-show">Fiche technique</h2>
                     <div class="container-information">
+                        <div class="container-information-split">
+                            <p>Nom du client: <span><?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?></span></p>
 
-                        <p>Information sur le client à venir</p>
+                            <p>Courriel du client: <span><?php echo get_post_meta(get_the_ID(), '_courriel_client', true) ?></span></p>
 
+                            <p>Numéro de téléphone: <span><?php echo get_post_meta(get_the_ID(), '_numero_client', true) ?></span></p>
+
+                            <p>Date et heure de rendez-vous: <span><?php echo $date ?></span></p>
+
+                            <p>Durée des réparation: <span><?php echo get_post_meta(get_the_ID(), '_temps_client', true) ?></span></p>
+
+                            <p>Réparations effectués: <span><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></span></p>
+                        </div>
+
+                        <div class="container-information-split">
+                            <p>État du suivi: <span><?php echo get_post_meta(get_the_ID(), '_statut_client', true) ?></span></p>
+
+                            <p>Coût des réparations: <span><?php echo get_post_meta(get_the_ID(), '_cout_client', true) ?></span></p>
+
+                            <p>Modèle de la voiture: <span><?php echo get_post_meta(get_the_ID(), '_modele_voiture', true) ?></span></p>
+
+                            <p>Marque de la voiture: <span><?php echo get_post_meta(get_the_ID(), '_marque_voiture', true) ?></span></p>
+
+                            <p>Année de la voiture: <span><?php echo get_post_meta(get_the_ID(), '_annee_voiture', true) ?></span></p>
+
+                            <p>Réparation/inspection à effectuer: <span><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></span></p>
+                        </div>
                     </div>
                 </div>
             </div>

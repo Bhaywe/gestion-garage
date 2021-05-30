@@ -2,9 +2,7 @@
      <?php while (have_posts()) : the_post(); ?>
 
           <form method="POST" id="edit-form" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
-
                <div class="flex form-container-section">
-
                     <div class="form-edit-client-section">
                          <label for="nom">Nom du client</label>
                          <input type="text" name="nom" value="<?php echo get_post_meta(get_the_ID(), '_nom_client', true) ?>" required>
@@ -23,7 +21,6 @@
 
                          <label for="reparations">Réparation/inspection à effectuer</label>
                          <textarea type="text" name="reparations" /><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></textarea>
-
                     </div>
 
                     <div class="form-edit-client-section">
@@ -54,7 +51,6 @@
 
                          <label for="reparations-done">Réparations effectués</label>
                          <textarea type="text" name="reparations-done" /><?php echo get_post_meta(get_the_ID(), '_reparations_effectuer', true) ?></textarea>
-
                     </div>
                </div>
 
@@ -66,7 +62,6 @@
                     <input type="submit" value="Modifier" class="modifier btn u-margin-top-normal">
                     <a href="<?php echo get_delete_post_link($post->ID, '', true) ?>" onclick="return confirm('Are you sure you want to delete this item?');">Supprimer</a>
                </div>
-
           </form>
 </section>
 

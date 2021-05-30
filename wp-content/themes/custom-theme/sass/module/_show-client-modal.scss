@@ -17,3 +17,32 @@
     height: 100vh;
     background-color: rgba(196, 196, 196, 0.65);
 }
+
+.container-information{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 60px;
+    p{
+        margin-bottom: 10px;
+    }
+    &-split:first-child{
+        margin-right: 20px;
+    }
+}
+
+.fiche-technique-titre-show{
+    font-family: Merriweather;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 45px;
+    letter-spacing: 0em;
+    text-align: left;
+    background-color: rgba(241, 241, 241, 0.08);
+    padding: 10px 5% 10px 7%;
+    margin: 20px 0;
+}

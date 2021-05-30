@@ -3,7 +3,7 @@
     <div class="fiche-technique">
         <img src="<?php echo get_template_directory_uri(); ?>/img/quitter.svg" class="close" alt="bouton fermer" />
 
-        <h2 class="fiche-technique-titre">Fiche technique</h2>
+        <h2 class="fiche-technique-titre-add">Fiche technique</h2>
 
         <div class="form-container">
             <form method="POST" id="add-client-form" action="<?php echo esc_url(admin_url('admin-post.php')); ?>">
