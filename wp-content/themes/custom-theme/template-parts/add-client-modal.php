@@ -41,7 +41,7 @@
 
                 </div>
 
-                <div class="contaimer-textarea">
+                <div class="container-textarea">
                     <label for="reparations">Réparation/inspection à effectuer</label>
                     <textarea type="text" name="reparations"></textarea>
                 </div>

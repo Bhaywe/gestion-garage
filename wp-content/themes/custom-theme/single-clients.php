@@ -20,6 +20,10 @@
 
                          <label for="temps">Durée des réparation</label>
                          <input type="text" value="<?php echo get_post_meta(get_the_ID(), '_temps_client', true) ?>" name="temps">
+
+                         <label for="reparations">Réparation/inspection à effectuer</label>
+                         <textarea type="text" name="reparations" /><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></textarea>
+
                     </div>
 
                     <div class="form-edit-client-section">
@@ -47,21 +51,12 @@
 
                          <label for="annee">Année de la voiture</label>
                          <input type="text" name="annee" value="<?php echo get_post_meta(get_the_ID(), '_annee_voiture', true) ?>">
-                    </div>
-               </div>
 
-               <div class="flex">
-                    <div class="contaimer-textarea">
-                         <label for="reparations">Réparation/inspection à effectuer</label>
-                         <textarea type="text" name="reparations" /><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></textarea>
-                    </div><br>
-
-                    <div class="contaimer-textarea">
                          <label for="reparations-done">Réparations effectués</label>
                          <textarea type="text" name="reparations-done" /><?php echo get_post_meta(get_the_ID(), '_reparations_effectuer', true) ?></textarea>
-                    </div><br>
-               </div>
 
+                    </div>
+               </div>
 
                <!-- on enregistre le id afind de pouvoir modifier le post -->
                <input type="hidden" name="idclient" value="<?php echo get_post_meta(get_the_ID(), '_client_id', true) ?>" />
