@@ -1,3 +1,5 @@
+@import "./main";
+
 .hide-edit{
     display: none;
 }
@@ -15,10 +17,7 @@
 }
 
 .close-edit{
-    position: relative;
-    left: 20px;
-    top: 20px;
-    margin-bottom: 15px;
+    @include close-modal;
 }
 
 .edit-fiche-technique{

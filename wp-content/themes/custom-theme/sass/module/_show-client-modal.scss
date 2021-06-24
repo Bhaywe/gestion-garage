@@ -1,12 +1,11 @@
+@import "./main";
+
 .hide-show{
     display: none;
 }
 
 .close-show{
-    position: relative;
-    left: 20px;
-    top: 20px;
-    margin-bottom: 15px;
+    @include close-modal;
 }
 
 .show-client-modal{

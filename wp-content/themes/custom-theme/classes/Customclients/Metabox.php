@@ -6,7 +6,6 @@ class Metabox
 {
     public function __construct()
     {
-        // add_action("add_meta_boxes", [$this, 'add_post_meta_boxes_clients']);
         add_action("admin_init", [$this, 'add_post_meta_boxes_clients']);
         add_action("save_post_clients", [$this, 'save_post_meta_boxes_clients']);
     }
@@ -37,6 +36,7 @@ class Metabox
                 return;
             }
 
+            update_post_meta($post->ID, 'post_title', sanitize_text_field($_POST["_nom_client"]));
             update_post_meta($post->ID, "_nom_client", sanitize_text_field($_POST["_nom_client"]));
             update_post_meta($post->ID, "_courriel_client", sanitize_text_field($_POST["_courriel_client"]));
             update_post_meta($post->ID, "_numero_client", sanitize_text_field($_POST["_numero_client"]));

@@ -1,3 +1,5 @@
+@import "./main";
+
 .hide{
     display: none;
 }
@@ -12,10 +14,7 @@
 }
 
 .close{
-    position: relative;
-    left: 20px;
-    top: 20px;
-    margin-bottom: 15px;
+    @include close-modal;
 }
 
 .fiche-technique{
