@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty-One package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2021-01-10 22:32:22+0000\n"
+"PO-Revision-Date: 2021-06-02 10:38:58+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -211,6 +211,11 @@ msgstr "« Auto-portrait » par Berthe Morisot"
 msgid "&#8220;Daffodils&#8221; by Berthe Morisot"
 msgstr "« Jonquilles » par Berthe Morisot"
 
+#: inc/block-patterns.php:72 inc/block-patterns.php:107
+#: inc/starter-content.php:43
+msgid "&#8220;Roses Trémières&#8221; by Berthe Morisot"
+msgstr "« Rose Trémières » par Berthe Morisot"
+
 #: inc/template-functions.php:399
 msgctxt "Post password form"
 msgid "Enter"
@@ -286,6 +291,10 @@ msgstr "Dans le bois de Boulogne"
 msgid "Villa with Orange Trees, Nice"
 msgstr "Villa avec orangers, Nice"
 
+#: inc/block-patterns.php:107
+msgid "Roses Trémières"
+msgstr "Roses Trémières"
+
 #: inc/block-patterns.php:96
 msgid "&#8220;Villa with Orange Trees, Nice&#8221; by Berthe Morisot"
 msgstr "« Villa dans les orangers, Nice » par Berthe Morisot"
@@ -342,6 +351,11 @@ msgid "On Archive Pages, posts show:"
 msgstr "Sur les pages d’archive, les publications affichent :"
 
 #. translators: %s: Author name.
+#: template-parts/post/author-bio.php:31
+msgid "View all of %s's posts."
+msgstr "Voir tous les articles de %s."
+
+#. translators: %s: Author name.
 #: template-parts/post/author-bio.php:19 inc/template-tags.php:49
 msgid "By %s"
 msgstr "Par %s"
@@ -353,6 +367,11 @@ msgstr "Il semblerait que nous ne soyons pas en mesure de trouver votre contenu.
 #: template-parts/content/content-none.php:56
 msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
 msgstr "Désolé, mais rien ne correspond à vos critères de recherche. Veuillez réessayer avec d’autres mots-clés."
+
+#. translators: %s: Link to WP admin new post page.
+#: template-parts/content/content-none.php:43
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "Prêt·e à publier votre premier article ? <a href=\"%1$s\">Lancez-vous ici</a>."
 
 #: single.php:40
 msgid "Previous post"
