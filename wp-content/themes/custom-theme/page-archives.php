@@ -1,13 +1,11 @@
+<?php
+/*
+Template Name: Name To Appear In The Dropdown
+*/
+get_header();
+?>
 <div class="tableau-clients">
-    <div class="tableau-clients-header flex">
-        <h2>Gestion clients</h2><img src="<?php echo get_template_directory_uri(); ?>/img/add.svg" class="ajout-client" alt="bouton ajouter" />
-    </div>
-
-    <?php
-    get_template_part('template-parts/add-client-modal');
-    ?>
-
-    <table>
+    <table id="archives">
         <tr>
             <th>#id</th>
             <th>Nom du client</th>
@@ -30,7 +28,7 @@
                 'meta_query' => array(
                     array(
                         'key' => '_statut_client',
-                        'value' => ['En attente', 'En cours'],
+                        'value' => ['Terminé'],
                     ),
                 ),
             )

@@ -17,9 +17,9 @@
                <h1 class="header-titre">custom <span>gear</span></h1>
                <nav class="header-menu">
                     <ul>
-                         <li><a href="<?php the_permalink(2); ?>" > <?php echo get_the_title(2); ?></a></li>
+                         <li><a href="<?php the_permalink(2); ?>"> <?php echo get_the_title(2); ?></a></li>
                          <li>Calendrier</li>
-                         <li>Archives</li>
+                         <li><a href="<?php the_permalink(306); ?>"> <?php echo get_the_title(306); ?></a></li>
                     </ul>
                </nav>
           </div>
