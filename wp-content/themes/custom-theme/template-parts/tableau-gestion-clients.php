@@ -110,7 +110,7 @@
 
                             <p>Année de la voiture: <span><?php echo get_post_meta(get_the_ID(), '_annee_voiture', true) ?></span></p>
 
-                            <p>Réparation/inspection à effectuer: <span><?php echo get_post_meta(get_the_ID(), '_reparations_voiture', true) ?></span></p>
+                            <p>Réparation/inspection à effectuer: <span><?php echo get_post_meta(get_the_ID(), '_reparations_effectuer', true) ?></span></p>
                         </div>
                     </div>
                 </div>
