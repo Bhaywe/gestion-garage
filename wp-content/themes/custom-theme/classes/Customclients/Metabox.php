@@ -41,7 +41,7 @@ class Metabox
             update_post_meta($post->ID, "_courriel_client", sanitize_text_field($_POST["_courriel_client"]));
             update_post_meta($post->ID, "_numero_client", sanitize_text_field($_POST["_numero_client"]));
             update_post_meta($post->ID, "_date_client", sanitize_text_field($_POST["_date_client"]));
-            update_post_meta($post->ID, "recommandations", sanitize_text_field($_POST["_temps_client"]));
+            update_post_meta($post->ID, "_temps_client", sanitize_text_field($_POST["_temps_client"]));
 
             update_post_meta($post->ID, "_statut_client", sanitize_text_field($_POST["_statut_client"]));
             update_post_meta($post->ID, "_cout_client", sanitize_text_field($_POST["_cout_client"]));
@@ -51,8 +51,8 @@ class Metabox
             update_post_meta($post->ID, "_annee_voiture", sanitize_text_field($_POST["_annee_voiture"]));
 
             update_post_meta($post->ID, "_reparations_voiture", sanitize_text_field($_POST["_reparations_voiture"]));
+
             update_post_meta($post->ID, "_reparations_effectuer", sanitize_text_field($_POST["_reparations_effectuer"]));
-            update_post_meta($post->ID, "_recommandations_voiture", sanitize_text_field($_POST["_recommandations_voiture"]));
 
             update_post_meta($post->ID, "_client_id", $post->ID);
         }
@@ -76,6 +76,8 @@ class Metabox
             $modeleVoiture = $custom["_modele_voiture"][0];
             $anneeVoiture = $custom["_annee_voiture"][0];
             $marqueVoiture = $custom["_marque_voiture"][0];
+            $reparationsVoiture = $custom["_reparations_voiture"][0];
+            $reparationEffectuer = $custom["_reparations_effectuer"][0];
 
             if (isset($statutClient)) {
                 switch ($statutClient) {
@@ -161,6 +163,15 @@ class Metabox
                 <div class="flex container_cout">
                     <label for="_reparations_voiture">Réparation/inspection à effectuer</label>
                     <input type="textarea" name="_reparations_voiture" value="<?php echo $reparationsVoiture ?>">
+                </div>
+            </div>
+            <br>
+
+            <br>
+            <div class="flex container">
+                <div class="flex container_cout">
+                    <label for="_reparations_effectuer">Réparation effectuer</label>
+                    <input type="textarea" name="_reparations_effectuer" value="<?php echo $reparationEffectuer ?>">
                 </div>
             </div>
             <br>
