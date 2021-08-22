@@ -5,6 +5,9 @@ Template Name: Name To Appear In The Dropdown
 get_header();
 ?>
 <div class="tableau-clients">
+    <div class="tableau-clients-header flex">
+        <h2>Archives</h2>
+    </div>
     <table id="archives">
         <tr>
             <th>#id</th>
